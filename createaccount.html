@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="shortcut icon" href="keralatourismclipart2.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <a class="navbar-brand" href="home.html">
+                <img src="keralatourismclipart1.png" height="30">
+            </a>
+            <div class="collapse navbar-collapse">
+
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="districts.html">Districts</a>
+                    </li>
+                </ul>
+            
+            </div>
+            
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row" style="height: 100px;"></div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 text-secondary">
+                <h1 style="text-align: center; padding: 20px;">Create Account</h1>
+                
+                <form>
+                <!-- <form onsubmit="return validate()"> -->
+                    <div class="form-row">
+                      <div class="form-group col">
+                        <input type="text" class="form-control" placeholder="First name" id="nam1">
+                      </div>
+                      <div class="form-group col">
+                        <input type="text" class="form-control" placeholder="Last name" id="nam2">
+                      </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email address" id="mail">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Password" id="pwd">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Confirm password" id="cpwd">
+                    </div>
+
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">Remember me</label>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" formaction="login.html">Create account</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
