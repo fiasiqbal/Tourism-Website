@@ -20,10 +20,10 @@
 
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                    <a class="nav-link" href="home.html">Home</a>
+                        <a class="nav-link" href="home.html">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="districts.html">Districts</a>
+                        <a class="nav-link" href="districts.html">Districts</a>
                     </li>
                 </ul>
             
@@ -39,25 +39,27 @@
             <div class="col-md-4 text-secondary">
                 <h1 style="text-align: center; padding: 20px;">Create Account</h1>
                 
-                <form>
-                <!-- <form onsubmit="return validate()"> -->
+                <form onsubmit="return mail()">
                     <div class="form-row">
                       <div class="form-group col">
-                        <input type="text" class="form-control" placeholder="First name" id="nam1">
+                        <input type="text" class="form-control" placeholder="First name" id="nam1" required>
                       </div>
                       <div class="form-group col">
-                        <input type="text" class="form-control" placeholder="Last name" id="nam2">
+                        <input type="text" class="form-control" placeholder="Last name" id="nam2" required>
                       </div>
                     </div>
                     
                     <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email address" id="mail">
+                        <input type="email" class="form-control" placeholder="Email address" id="email" required>
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" placeholder="Password" id="pwd">
+                        <input type="tel" class="form-control" placeholder="Phone number" id="phone" required>
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" placeholder="Confirm password" id="cpwd">
+                        <input type="password" class="form-control" placeholder="Password" id="pwd" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Confirm password" id="cpwd" required>
                     </div>
 
                     <div class="form-group">
@@ -71,6 +73,8 @@
             </div>
         </div>
     </div>
+
+    <script src="createaccount.js"></script>
     
 </body>
 </html>
