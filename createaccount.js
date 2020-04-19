@@ -37,3 +37,62 @@ function pwd(){
         return false
     }
 }
+
+let pass = document.getElementById('pwd');
+pass.addEventListener('keyup',function(){
+    checkPassword(pass.value);
+})
+
+function checkPassword(password){
+    var prog = document.getElementById('prog');
+    var strengthBar = document.getElementById('strength');
+    var strength = 0;
+  
+    if(password.match(/[a-z]+/)){
+        strength += 1;
+    }
+  
+    if(password.match(/[A-Z]+/)){
+        strength += 1;
+    }
+
+    if(password.match(/[0-9]+/)){
+        strength += 1;
+    }
+   
+    if(password.length>=8){
+        strength += 1;
+    }
+  
+    switch(strength){
+        case 0: strengthBar.style.width='0%';
+            document.getElementById('strength1').innerText="Enter password";
+            document.getElementById('strength1').style.color='gray';          
+            break;
+  
+        case 1: strengthBar.style.width='25%';
+            strengthBar.style.backgroundColor='red';
+            document.getElementById('strength1').innerText="Poor";
+            document.getElementById('strength1').style.color='red';
+            break;
+  
+        case 2: strengthBar.style.width='50%';
+            strengthBar.style.backgroundColor='orange';
+            document.getElementById('strength1').innerText="Medium";
+            document.getElementById('strength1').style.color='orange';
+            break;
+
+        case 3: strengthBar.style.width='75%';
+            strengthBar.style.backgroundColor='yellow';
+            document.getElementById('strength1').innerText="Good";
+            document.getElementById('strength1').style.color = 'yellow';
+            break;
+  
+        case 4: strengthBar.style.width='100%';
+            strengthBar.style.backgroundColor='green';
+            document.getElementById('strength1').innerText="Strong!";
+            document.getElementById('strength1').style.color='green';
+            break;
+  
+    }
+}
